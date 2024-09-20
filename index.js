@@ -173,7 +173,19 @@ form.addEventListener(`submit`, (event) => {
       card.appendChild(liIngredientes)
       card.appendChild(liPrecio)
 
+      // Se renderiza el menú nuevamente y la card solicitada/////////////////////////////////////////
+
       const main = document.querySelector(".main__container");
+      main.innerHTML = `      
+      <h2>MENÚ</h2>
+      <ul>
+        <li>1 - Pizza de Muzarella</li>
+        <li>2 - Pizza de Cebolla</li>
+        <li>3 - Pizza 4 Quesos</li>
+        <li>4 - Pizza Especial</li>
+        <li>5 - Pizza con Ananá</li>
+      </ul>`;
+
       main.appendChild(card)
     } else {
 
